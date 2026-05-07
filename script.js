@@ -153,6 +153,7 @@
     const target = parseInt(el.dataset.count, 10);
     const duration = 1800;
     const start = performance.now();
+    el.textContent = '0';
 
     const update = (now) => {
       const elapsed = now - start;
